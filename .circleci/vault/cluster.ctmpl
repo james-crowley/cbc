@@ -1,7 +1,7 @@
 {{$appenv := env "APP_ENV"}}
-{{$apppath :=  "secret/cluster/ecap" }}
+{{$apppath :=  "secret/cluster/cba" }}
 {{ if eq $appenv "dev" }}
-    {{$apppath = printf "secret/cluster/ecap-%s" $appenv}}
+    {{$apppath = printf "secret/cluster/cba-%s" $appenv}}
 {{ end }}
 {{ with secret $apppath }}
    # Secrets for {{ $appenv }} from {{ $apppath }}
