@@ -11,7 +11,7 @@ vault {
 
 auto_auth {
   method "jwt" {
-    mount_path = "auth/jwt"
+    mount_path = "auth/jwt-ecap"
     config = {
       role = "${VAULT_ROLE}"
       path = ".circleci/vault/token.json"
